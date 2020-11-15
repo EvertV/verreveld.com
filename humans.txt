@@ -1,0 +1,15 @@
+/* TEAM */
+	Web master: Evert Vanderstadt
+	Contact: evertvanderstadt@gmail.com
+	Site: http://users.hogent.be/evert/
+	From: Londerzeel, Belgium
+
+/* THANKS */
+
+	Feedback: Friends and family		
+
+/* SITE */
+	Last update:2017/04/21
+	Standards: HTML5, CSS3, JS
+	Components: jQuery, Lightbox, Bootstrap, realfavicongenerator
+	IDE: Sublime Text, Notepad++, FileZilla, Photoshop

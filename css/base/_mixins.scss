@@ -1,0 +1,41 @@
+//Mix-ins
+@mixin bR($size:5px) {
+    border-radius: $size;
+    -moz-border-radius: $size;
+    -webkit-border-radius: $size;
+    -ms-border-radius: $size;
+}
+
+@mixin border($size:1px, $color:$Cl) {
+    border: $size solid $color;
+}
+
+@mixin no-select() {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+@mixin responsive($media) {
+    @if $media==tablet {
+        @media only screen and (min-width: $tablet) {
+            @content;
+        }
+    }
+    @else if $media==desktop {
+        @media only screen and (min-width: $desktop) {
+            @content;
+        }
+    }
+    @else if $media==mobile {
+        @media only screen and (min-width: $mobile) {
+            @content;
+        }
+    }
+}
+@mixin bShadow($top, $left, $blur, $color, $inset:"") {
+    -webkit-box-shadow: $top $left $blur $color #{$inset};
+    -moz-box-shadow: $top $left $blur $color #{$inset};
+    box-shadow: $top $left $blur $color #{$inset};
+}
